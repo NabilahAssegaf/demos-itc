@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #FEF9E1;
+    color: #333;
+}
+header {
+    background-color: #A31D1D;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #A31D1D;
+  text-align: center;
+  color: white;
+  }
+section{
+  padding: 1rem 2rem;
+}
+section h2{
+  margin-bottom: 1rem;
+}
+.category{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+.catalog{
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.category img{
+  width:380px ;
+  height: 380px;
+  object-fit: cover;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+.label{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: x-large;
+  color: #ffffff;
+  background-color: #A31D1D;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.label:hover {
+  background-color: #831515;
+}
+.info {
+  padding: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.price {
+  font-size: 14px;
+  color: #e74c3c; /* warna harga khas e-commerce */
+}
+.buy-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #A31D1D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #7f1616;
+}
+
