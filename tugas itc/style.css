@@ -31,12 +31,14 @@ header {
 .navbar a {
   color: white;
   font-weight: bold;
-  margin: 30px;;
+  margin: 30px;
 }
 
-section{
-  padding: 4rem 2rem;
+section {
+  padding: 60px 20px;
+  margin-bottom: 100px;
 }
+
 section h2{
   margin-bottom: 1rem;
 }
@@ -52,7 +54,7 @@ button{
   white-space: nowrap;
 }
 #about {
-  padding: 60px 20px;
+  padding: 100px 20px;
   max-width: 1000px;
   margin: 50px auto;
   border-radius: 20px;
@@ -62,7 +64,7 @@ button{
   background-color: #A31D1D;
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 28px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -104,24 +106,91 @@ button{
   display: block;
 }
 
-.category{
-  display: flex;
-  flex-direction: column;
+.bulat {
+  position: fixed;
+  width: 160px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Posisi masing-masing */
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+
+#Category {
+  padding: 60px 20px;
   text-align: center;
 }
-.bungkus{
+
+#Category .category-title {
+  font-size: 36px;
+  color: #a31d1d;
+  background-color: white;
+  display: inline-block;
+  padding: 16px 480px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Category .category-wrapper {
   display: flex;
-  gap: 1.5rem;
-}
-.category img{
-  width:380px ;
-  height: 450px;
-  object-fit: cover;
-  margin-top: 2rem;
   justify-content: center;
-  align-items: center;
-  border-radius: 5%;
+  gap: 75px;
+  flex-wrap: wrap;
 }
+
+#Category .category-card {
+  background-color: white;
+  border-radius: 0 0 30px 30px;
+  width: 320px;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#Category .category-card:hover {
+  transform: translateY(-8px);
+}
+
+#Category .category-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+#Category .category-card p {
+  background-color: white;
+  color: #a31d1d;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+
 .label{
   display: inline-block;
   margin-top: 20px;
@@ -185,7 +254,7 @@ button{
 
 .contact-section {
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 70px auto;
   background-color: #fff;
   padding: 40px;
   border-radius: 10px;
@@ -242,39 +311,160 @@ button{
 .contact-form button:hover {
   background-color: #831515;
 }
+
 #Testimonial {
-  padding: 40px;
-  background-color: #fff7e6;
+  color: #831515;
+  padding: 30px;
   text-align: center;
 }
 
 #Testimonial h2 {
+  font-size: 40px; 
   margin-bottom: 20px;
   color: #a31d1d;
   text-align: center;
 }
 
-
-.testimonial-table {
-  margin: 0 auto;
-  border-collapse: collapse;
-  width: 80%;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #A31D1D;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.testimonial-table th,
-.testimonial-table td {
-  border: 1px solid #ddd;
-  padding: 12px;
+.testimonial-boxes {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
   text-align: left;
 }
 
-.testimonial-table th {
-  background-color: #a31d1d;
-  color: white;
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.testimonial-table tr:nth-child(even) {
-  background-color: #f9f9f9;
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.date {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+
+.comment {
+  margin: 10px 0;
+}
+
+.stars {
+  color: gold;
+  font-size: 18px;
+}
+
+.testimonial-form {
+  flex: 1;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.testimonial-form h3 {
+  color: #b80000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.testimonial-form input,
+.testimonial-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.testimonial-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #b80000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.testimonial-form button:hover {
+  background-color: #831515;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse; /* agar bintang 5 di kiri */
+  justify-content: start;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.star-rating input[type="radio"]:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+}
+
+
+.craving-banner {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.craving-full {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
 }

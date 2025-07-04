@@ -29,6 +29,11 @@
 </section>
 
 <section id="about">
+  <img src="img/bulet.png" class="bulat top-left" alt="">
+  <img src="img/bulet.png" class="bulat top-right" alt="">
+  <img src="img/bulet.png" class="bulat bottom-left" alt="">
+  <img src="img/bulet.png" class="bulat bottom-right" alt="">
+
   <h2>About Us</h2>
   <div class="about-container">
     <div class="about-text">
@@ -40,50 +45,96 @@
   </div>
 </section>
 
-        <section id="Category">
-  <button><h1>Pick Your Perfect Combo!!</h1></button>
-  <div class="bungkus">
-    <div class="category">
-      <a href="maindish.html"><img src="img/maindish.jpg" alt=""></a>
-      <div class="label">Noodle Stars</div>
-    </div>
-
-    <div class="category">
-      <a href="sidedish.html"><img src="img/sidedish.jpg" alt=""></a>
-      <div class="label">Tasty Sides</div>
-    </div>
-
-    <div class="category">
-      <a href="drink.html"><img src="img/drink.jpg" alt=""></a>
-      <div class="label">Sip & Slurp</div>
-    </div>
+<section id="Category">
+  <h2 class="category-title">Category</h2>
+  <div class="category-wrapper">
+    
+    <a href="maindish.html" class="category-card">
+      <img src="img/maindish.jpg" alt="noodle">
+      <p>Noodle</p>
+    </a>
+    
+    <a href="sidedish.html" class="category-card">
+      <img src="img/sidedish.jpg" alt="side dish">
+      <p>Side dish</p>
+    </a>
+    
+    <a href="drink.html" class="category-card">
+      <img src="img/drink.jpg" alt="drink">
+      <p>Drink</p>
+    </a>
+    
   </div>
 </section>
 
+
 <section id="Testimonial">
   <h2>What Our Customers Say</h2>
-  <table class="testimonial-table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Testimonial</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Siti</td>
-        <td>"Mienya enak banget, bakal order lagi!"</td>
-      </tr>
-      <tr>
-        <td>Budi</td>
-        <td>"Pelayanannya cepat dan ramah!"</td>
-      </tr>
-      <tr>
-        <td>Ani</td>
-        <td>"Harga terjangkau, rasa bintang lima."</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="testimonial-container">
+    <div class="testimonial-boxes">
+      <div class="testimonial-card">
+        <div class="user-info">
+          <img src="img/profile.png" alt="User" class="profile-pic">
+          <div>
+            <p class="user-name">nab</p>
+            <p class="date">03/07/2025</p>
+          </div>
+        </div>
+        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magnam dolor, consequatur ipsam assumenda recusandae sed, illo eaque porro id iusto. Deleniti debitis dolores</p>
+        <p class="stars">★★★★★</p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="user-info">
+          <img src="img/profile.png" alt="User" class="profile-pic">
+          <div>
+            <p class="user-name">nab</p>
+            <p class="date">03/07/2025</p>
+          </div>
+        </div>
+        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magnam dolor, consequatur ipsam assumenda recusandae sed, illo eaque porro id iusto. Deleniti debitis dolores</p>
+        <p class="stars">★★★★★</p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="user-info">
+          <img src="img/profile.png" alt="User" class="profile-pic">
+          <div>
+            <p class="user-name">nab</p>
+            <p class="date">03/07/2025</p>
+          </div>
+        </div>
+        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magnam dolor, consequatur ipsam assumenda recusandae sed, illo eaque porro id iusto. Deleniti debitis dolores</p>
+        <p class="stars">★★★★★</p>
+      </div>
+    </div>
+
+<div class="testimonial-form">
+  <h3>Leave comment here !!</h3>
+  <form action="#">
+    <label for="name">name</label>
+    <input type="text" id="name" name="name">
+
+    <label for="message">message</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <label for="rating">rating</label>
+    <div class="star-rating">
+      <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+      <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+      <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+      <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+      <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>
+
+    <button type="submit">send</button>
+  </form>
+</div>
+
+</section>
+
+<section class="craving-banner">
+  <img src="img/WhatsApp Image 2025-07-04 at 13.33.23_45399516.jpg" alt="Craving something tasty" class="craving-full">
 </section>
 
 
