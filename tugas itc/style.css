@@ -54,10 +54,14 @@ button{
   white-space: nowrap;
 }
 #about {
+  position: relative;
   padding: 100px 20px;
   max-width: 1000px;
   margin: 50px auto;
   border-radius: 20px;
+  
+  z-index: 1; /* tambahin ini */
+  background-color: transparent;
 }
 
 #about h2 {
@@ -106,14 +110,25 @@ button{
   display: block;
 }
 
-.bulat {
-  position: fixed;
-  width: 160px;
-  opacity: 0.3;
-  z-index: -1;
+.bulet1 {
+  position: absolute;
+  top: 20px;
+  bottom: auto; /* Jangan lupa matikan bottom */
+  left: -400px;
+  width: 500px;
+  z-index: -1; /* ❗ Letakkan di belakang konten */
+  pointer-events: none;
 }
 
-/* Posisi masing-masing */
+.bulet2 {
+  position: absolute;
+  right: -120px;     /* geser lebih ke kanan */
+  bottom: -120px;    /* geser lebih ke bawah */
+  width: 600px;
+  z-index: -1;
+  pointer-events: none;
+}
+
 .top-left {
   top: 0;
   left: 0;
@@ -251,7 +266,6 @@ button{
   margin-bottom: 50px;;
 }
 
-
 .contact-section {
   max-width: 1000px;
   margin: 70px auto;
@@ -319,7 +333,7 @@ button{
 }
 
 #Testimonial h2 {
-  font-size: 40px; 
+  font-size: 50px; 
   margin-bottom: 20px;
   color: #a31d1d;
   text-align: center;
@@ -393,7 +407,7 @@ button{
 
 .testimonial-form h3 {
   color: #b80000;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
@@ -408,7 +422,7 @@ button{
   width: 100%;
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 2px solid #821a1a;
   margin-top: 5px;
 }
 
@@ -416,6 +430,8 @@ button{
   margin-top: 10px;
   padding: 10px;
   background-color: #b80000;
+  font-size: 20px;
+  font-weight: bold;
   color: white;
   border: none;
   border-radius: 6px;
@@ -429,8 +445,8 @@ button{
 
 .star-rating {
   display: flex;
-  flex-direction: row-reverse; /* agar bintang 5 di kiri */
-  justify-content: start;
+  flex-direction: row-reverse; 
+  justify-content: center;
   gap: 5px;
   margin-top: 5px;
 }
@@ -440,7 +456,7 @@ button{
 }
 
 .star-rating label {
-  font-size: 24px;
+  font-size: 44px;
   color: #ccc;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
@@ -455,16 +471,73 @@ button{
 
 .craving-banner {
   width: 100%;
-  text-align: center;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .craving-full {
   width: 100%;
-  max-width: 1200px;
   height: auto;
   display: block;
+  margin: 0;
+  border-radius: 0; /* Buat full tanpa lengkungan */
+}
+
+.site-footer {
+  background-color: #A31D1D;
+  color: white;
+  padding: 40px 20px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
   margin: 0 auto;
-  border-radius: 10px;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  opacity: 0.8;
 }
