@@ -18,6 +18,17 @@ body {
   color: var(--text);
 }
 
+.back-button {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 24px;
+  color: #A31D1D;
+  padding: 10px 12px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
 .container {
   max-width: 1080px;
   margin: auto;

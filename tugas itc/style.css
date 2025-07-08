@@ -1,3 +1,9 @@
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -127,18 +133,28 @@ button{
   position: absolute;
   top: 20px;
   bottom: auto; 
-  left: -400px;
-  width: 500px;
+  left: -360px;
+  width: 580px;
   z-index: -1; 
   pointer-events: none;
 }
 
 .bulet2 {
   position: absolute;
-  right: -120px;     
-  bottom: -120px;    
-  width: 600px;
+  right: -420px;     
+  bottom: -290px;    
+  width: 700px;
   z-index: -1;
+  pointer-events: none;
+}
+
+.bulet3 {
+  position: absolute;
+  top: 680px;
+  bottom: auto; 
+  left: -360px;
+  width: 700px;
+  z-index: -1; 
   pointer-events: none;
 }
 
@@ -166,6 +182,22 @@ button{
 #Category {
   padding: 60px 20px;
   text-align: center;
+    position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#Category::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(60px);
 }
 
 #Category .category-title {
