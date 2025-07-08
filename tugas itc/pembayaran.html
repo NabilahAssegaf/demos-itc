@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran | MieMiu</title>
+  <link rel="stylesheet" href="cartpay.css" />
+</head>
+<body>
+
+  <div class="brand-logo">
+    <img src="img/logo.png" alt="">
+    <h1>MieMiu Checkout</h1>
+  </div>
+
+  <div class="container">
+    <div class="form-section">
+      <h2>Informasi Pengiriman</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Nama Lengkap</label>
+          <input type="text" id="name" placeholder="Masukan Nama anda.." required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">No. Telepon</label>
+          <input type="tel" id="phone" placeholder="08xxxxxxxxxx" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Alamat Lengkap</label>
+          <textarea id="address" rows="4" placeholder="Tulis alamat lengkap..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="payment">Metode Pembayaran</label>
+          <select id="payment" required>
+            <option value="">-- Pilih Metode --</option>
+            <option value="cod">COD (Bayar di Tempat)</option>
+            <option value="bank">Transfer Bank</option>
+            <option value="ewallet">E-Wallet (OVO, DANA, GoPay)</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="summary-section">
+      <h2>Ringkasan Pesanan</h2>
+
+      <div class="order-item">
+        <span>🍜 Classic Ramen (x2)</span>
+        <span>Rp 70.000</span>
+      </div>
+      <div class="order-item">
+        <span>🥟 Gyoza  (x1)</span>
+        <span>Rp 25.000</span>
+      </div>
+      <div class="order-item">
+        <span>🍹 Ocha (x1)</span>
+        <span>Rp 10.000</span>
+      </div>
+
+      <div class="total">
+        Total: Rp 105.000
+      </div>
+
+      <button class="pay-btn">Konfirmasi & Bayar</button>
+    </div>
+  </div>
+
+</body>
+</html>

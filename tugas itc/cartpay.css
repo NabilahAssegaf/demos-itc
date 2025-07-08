@@ -1,0 +1,116 @@
+:root {
+  --brand: #6E1423;
+  --accent: #FEF9E1;
+  --button: #A31D1D;
+  --text: #2D2D2D;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--accent);
+  padding: 40px;
+  color: var(--text);
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form-section, .summary-section {
+  flex: 1 1 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: var(--brand);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fafafa;
+}
+
+.summary-section {
+  background-color: #fffaf6;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.pay-btn {
+  margin-top: 200px;
+  background-color: var(--button);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  background-color: #b72a41;
+}
+
+.brand-logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.brand-logo img {
+  width: 110px;
+  margin-bottom: 10px;
+}
+
+.brand-logo h1 {
+  font-size: 1.8rem;
+  color: var(--brand);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

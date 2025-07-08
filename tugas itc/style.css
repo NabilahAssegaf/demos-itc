@@ -21,18 +21,32 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1;
+    gap: 1rem; 
 }
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
 }
-.navbar a {
-  color: white;
-  font-weight: bold;
-  margin: 30px;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #e3dfc7; 
+}
+
 
 section {
   padding: 60px 20px;
@@ -59,8 +73,7 @@ button{
   max-width: 1000px;
   margin: 50px auto;
   border-radius: 20px;
-  
-  z-index: 1; /* tambahin ini */
+  z-index: 1;
   background-color: transparent;
 }
 
@@ -113,17 +126,17 @@ button{
 .bulet1 {
   position: absolute;
   top: 20px;
-  bottom: auto; /* Jangan lupa matikan bottom */
+  bottom: auto; 
   left: -400px;
   width: 500px;
-  z-index: -1; /* ❗ Letakkan di belakang konten */
+  z-index: -1; 
   pointer-events: none;
 }
 
 .bulet2 {
   position: absolute;
-  right: -120px;     /* geser lebih ke kanan */
-  bottom: -120px;    /* geser lebih ke bawah */
+  right: -120px;     
+  bottom: -120px;    
   width: 600px;
   z-index: -1;
   pointer-events: none;
@@ -480,7 +493,7 @@ button{
   height: auto;
   display: block;
   margin: 0;
-  border-radius: 0; /* Buat full tanpa lengkungan */
+  border-radius: 0; 
 }
 
 .site-footer {

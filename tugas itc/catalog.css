@@ -31,7 +31,7 @@ header {
   background-position: center;
 }
 
-/* overlay gelap */
+
 .hero::after {
   content: "";
   position: absolute;
@@ -40,25 +40,24 @@ header {
   z-index: 1;
 }
 
-/* teks yang tampil di atas */
 .hero-text {
   position: absolute;
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
   color: white;
-  z-index: 2; /* > dari after */
+  z-index: 2; 
 }
 
 
 .hero-text h1 {
-  font-size: 70px; /* sebelumnya 48px */
+  font-size: 70px; 
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .hero-text p {
-  font-size: 35px; /* sebelumnya 22px */
+  font-size: 35px; 
   max-width: 700px;
 }
 
@@ -82,7 +81,12 @@ section {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px; 
 }
+
 
 .category:hover {
   transform: translateY(-6px);
@@ -96,8 +100,14 @@ section {
 }
 
 .info {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px; 
+  flex-grow: 1;  
 }
+
 
 .name {
   font-weight: bold;
@@ -107,23 +117,49 @@ section {
 }
 
 .price {
-  font-size: 16px;
+  font-size: 18px;
   color: #A31D1D;
   font-weight: bold;
 }
 
 .buy-btn {
-  margin-top: 15px;
-  background-color: #A31D1D;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
   border: none;
-  padding: 12px 32px;
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-family: inherit;
+  padding: 0;
+  width: auto;
+  max-width: 100%;
 }
 
-.buy-btn:hover {
+.buy-btn .text {
+  padding: 10px 20px;
+  background-color: #A31D1D;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border-right: 1px solid white;
+}
+
+.buy-btn .icon {
+  padding: 10px 16px;
+  background-color: #921818;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buy-btn .text:hover {
   background-color: #7f1616;
+}
+
+.buy-btn .icon:hover {
+  background-color: #661212;
 }
