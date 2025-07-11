@@ -143,3 +143,13 @@ body {
 .checkout-button i {
   margin-left: 5px;
 }
+
+.empty-message {
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

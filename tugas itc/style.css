@@ -73,7 +73,7 @@ button {
   white-space: nowrap;
 }
 #about {
-  position: relative;
+
   padding: 100px 20px;
   max-width: 1000px;
   margin: 50px auto;
@@ -197,7 +197,6 @@ button {
   border-radius: 50%;
   z-index: 0;
   filter: blur(60px);
-  background: rgba(163, 29, 29, 0.15);
 }
 
 #Category .category-title {
