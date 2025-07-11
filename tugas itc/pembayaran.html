@@ -14,15 +14,16 @@
     <a href="cart.html" class="back-button">
       <i class="fa-solid fa-arrow-left"></i>
     </a>
+
     <div class="brand-logo">
-      <img src="img/logo.png" alt="" />
+      <img src="img/logo.png" alt="Logo MieMiu" />
       <h1>MieMiu Checkout</h1>
     </div>
 
     <div class="container">
       <div class="form-section">
         <h2>Informasi Pengiriman</h2>
-        <form>
+        <form id="checkout-form">
           <div class="form-group">
             <label for="name">Nama Lengkap</label>
             <input
@@ -60,20 +61,18 @@
         </form>
       </div>
 
-      <div class="summary-section">
+      <div class="summary-section" id="summary">
         <h2>Ringkasan Pesanan</h2>
 
-        <div class="summary-section" id="summary">
-  <h2>Ringkasan Pesanan</h2>
 
-  <!-- Order items akan di-generate otomatis di sini -->
+        <div class="total">Total: Rp 0</div>
 
-  <div class="total">Total: Rp 0</div>
+        <button class="pay-btn">Konfirmasi & Bayar</button>
+      </div>
+    </div>
 
-  <button class="pay-btn">Konfirmasi & Bayar</button>
-</div>
 
-<script src="pay.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="pay.js"></script>
   </body>
 </html>

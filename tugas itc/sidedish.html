@@ -1,103 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="catalog.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <title>Side Dish</title>
-</head>
-<body>
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Side Dish</h1>
-      <p>
-        The perfect partner for your main dish! From crispy bites to savory treats, our tasty sides are here to make every meal more exciting.
-      </p>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="catalog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Side Dish</title>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Side Dish</h1>
+        <p>
+          The perfect partner for your main dish! From crispy bites to savory
+          treats, our tasty sides are here to make every meal more exciting.
+        </p>
+      </div>
+    </header>
 
-  <section class="menu-section">
-    <div class="catalog">
+    <section class="menu-section">
+      <div class="catalog">
+        <div class="category">
+          <a href="#"><img src="img/a.jpg" alt="Steamed Gyoza" /></a>
+          <div class="info">
+            <div class="name">Steamed Gyoza</div>
+            <div class="price">Rp30.000</div>
+            <button class="buy-btn">
+              <span class="text">Buy Now</span>
+              <span class="icon"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </button>
+          </div>
+        </div>
 
-      <div class="category">
-        <a href="#"><img src="img/a.jpg" alt="Steamed Gyoza" /></a>
-        <div class="info">
-          <div class="name">Steamed Gyoza</div>
-          <div class="price">Rp30.000</div>
-          <button class="buy-btn">
-            <span class="text">Buy Now</span>
-            <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
-          </button>
+        <div class="category">
+          <a href="#"><img src="img/b.jpg" alt="Dimsum" /></a>
+          <div class="info">
+            <div class="name">Dimsum</div>
+            <div class="price">Rp25.000</div>
+            <button class="buy-btn">
+              <span class="text">Buy Now</span>
+              <span class="icon"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="category">
+          <a href="#"><img src="img/c.jpg" alt="Bakpao" /></a>
+          <div class="info">
+            <div class="name">Bakpao</div>
+            <div class="price">Rp20.000</div>
+            <button class="buy-btn">
+              <span class="text">Buy Now</span>
+              <span class="icon"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="category">
+          <a href="#"><img src="img/d.jpg" alt="Mantao" /></a>
+          <div class="info">
+            <div class="name">Mantao</div>
+            <div class="price">Rp25.000</div>
+            <button class="buy-btn">
+              <span class="text">Buy Now</span>
+              <span class="icon"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="category">
+          <a href="#"><img src="img/e.jpg" alt="Siomay" /></a>
+          <div class="info">
+            <div class="name">Siomay</div>
+            <div class="price">Rp15.000</div>
+            <button class="buy-btn">
+              <span class="text">Buy Now</span>
+              <span class="icon"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="category">
+          <a href="#"><img src="img/f.jpg" alt="Miso Soup" /></a>
+          <div class="info">
+            <div class="name">Miso Soup</div>
+            <div class="price">Rp30.000</div>
+            <button class="buy-btn">
+              <span class="text">Buy Now</span>
+              <span class="icon"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </button>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="category">
-        <a href="#"><img src="img/b.jpg" alt="Dimsum" /></a>
-        <div class="info">
-          <div class="name">Dimsum</div>
-          <div class="price">Rp25.000</div>
-          <button class="buy-btn">
-            <span class="text">Buy Now</span>
-            <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
-          </button>
-        </div>
-      </div>
-
-      <div class="category">
-        <a href="#"><img src="img/c.jpg" alt="Bakpao" /></a>
-        <div class="info">
-          <div class="name">Bakpao</div>
-          <div class="price">Rp20.000</div>
-          <button class="buy-btn">
-            <span class="text">Buy Now</span>
-            <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
-          </button>
-        </div>
-      </div>
-
-      <div class="category">
-        <a href="#"><img src="img/d.jpg" alt="Mantao" /></a>
-        <div class="info">
-          <div class="name">Mantao</div>
-          <div class="price">Rp25.000</div>
-          <button class="buy-btn">
-            <span class="text">Buy Now</span>
-            <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
-          </button>
-        </div>
-      </div>
-
-      <div class="category">
-        <a href="#"><img src="img/e.jpg" alt="Siomay" /></a>
-        <div class="info">
-          <div class="name">Siomay</div>
-          <div class="price">Rp15.000</div>
-          <button class="buy-btn">
-            <span class="text">Buy Now</span>
-            <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
-          </button>
-        </div>
-      </div>
-
-      <div class="category">
-        <a href="#"><img src="img/f.jpg" alt="Miso Soup" /></a>
-        <div class="info">
-          <div class="name">Miso Soup</div>
-          <div class="price">Rp30.000</div>
-          <button class="buy-btn">
-            <span class="text">Buy Now</span>
-            <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
-          </button>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <script src="catalog.js"></script>
-
-
-
-</body>
+    <script src="catalog.js"></script>
+  </body>
 </html>

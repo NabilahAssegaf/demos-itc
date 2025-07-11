@@ -73,7 +73,6 @@ button {
   white-space: nowrap;
 }
 #about {
-
   padding: 100px 20px;
   max-width: 1000px;
   margin: 50px auto;
@@ -249,7 +248,7 @@ button {
   height: 350px;
   object-fit: cover;
   display: block;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 #Category .category-card p {
@@ -311,6 +310,19 @@ button {
   max-width: 500px;
   width: 100%;
   height: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.png {
+  animation: spin 30s linear infinite;
 }
 
 #home {
@@ -414,7 +426,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-height: 500px; 
+  max-height: 500px;
   overflow-y: auto;
   padding-right: 10px;
 }
