@@ -9,13 +9,13 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #FEF9E1;
+  background: #fef9e1;
   color: #333;
-  background-image: url('img/bg.png');
+  background-image: url("img/bg.png");
 }
 
 header {
-  background-color: #A31D1D;
+  background-color: #a31d1d;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
@@ -26,11 +26,10 @@ header {
   position: relative;
   width: 100%;
   height: 400px;
-  background-image: url('img/ramens.jpg');
+  background-image: url("img/ramens.jpg");
   background-size: cover;
   background-position: center;
 }
-
 
 .hero::after {
   content: "";
@@ -46,21 +45,19 @@ header {
   left: 10%;
   transform: translateY(-50%);
   color: white;
-  z-index: 2; 
+  z-index: 2;
 }
 
-
 .hero-text h1 {
-  font-size: 70px; 
+  font-size: 70px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .hero-text p {
-  font-size: 35px; 
+  font-size: 35px;
   max-width: 700px;
 }
-
 
 section {
   padding: 2rem;
@@ -84,9 +81,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 420px; 
+  min-height: 420px;
 }
-
 
 .category:hover {
   transform: translateY(-6px);
@@ -104,10 +100,9 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 15px; 
-  flex-grow: 1;  
+  padding: 15px;
+  flex-grow: 1;
 }
-
 
 .name {
   font-weight: bold;
@@ -118,7 +113,7 @@ section {
 
 .price {
   font-size: 18px;
-  color: #A31D1D;
+  color: #a31d1d;
   font-weight: bold;
 }
 
@@ -139,7 +134,7 @@ section {
 
 .buy-btn .text {
   padding: 10px 20px;
-  background-color: #A31D1D;
+  background-color: #a31d1d;
   color: white;
   font-weight: bold;
   font-size: 14px;

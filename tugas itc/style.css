@@ -1,69 +1,68 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
 }
 body {
-  background-image: url('img/bg.png');
+  background-image: url("img/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   font-family: Arial, sans-serif;
-
 }
 header {
-    background-color: #A31D1D;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem; 
+  background-color: #a31d1d;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .navbar a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.2s ease;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .navbar a:hover {
-    color: #e3dfc7; 
+  color: #e3dfc7;
 }
-
 
 section {
   padding: 60px 20px;
   margin-bottom: 100px;
 }
 
-section h2{
+section h2 {
   margin-bottom: 1rem;
 }
-button{
-  background-color: #A31D1D;
+button {
+  background-color: #a31d1d;
   color: white;
   padding: 10px 480px;
   border: none;
@@ -84,7 +83,7 @@ button{
 }
 
 #about h2 {
-  background-color: #A31D1D;
+  background-color: #a31d1d;
   color: white;
   text-align: center;
   padding: 12px 0;
@@ -92,6 +91,7 @@ button{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin-bottom: 0;
+  font-family: "Jua", sans-serif;
 }
 
 .about-container {
@@ -101,7 +101,7 @@ button{
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
-  min-height: 300px; 
+  min-height: 300px;
 }
 
 .about-text {
@@ -132,17 +132,17 @@ button{
 .bulet1 {
   position: absolute;
   top: 20px;
-  bottom: auto; 
+  bottom: auto;
   left: -360px;
   width: 580px;
-  z-index: -1; 
+  z-index: -1;
   pointer-events: none;
 }
 
 .bulet2 {
   position: absolute;
-  right: -420px;     
-  bottom: -290px;    
+  right: -420px;
+  bottom: -290px;
   width: 700px;
   z-index: -1;
   pointer-events: none;
@@ -151,10 +151,10 @@ button{
 .bulet3 {
   position: absolute;
   top: 680px;
-  bottom: auto; 
+  bottom: auto;
   left: -360px;
   width: 700px;
-  z-index: -1; 
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -178,11 +178,10 @@ button{
   right: 0;
 }
 
-
 #Category {
   padding: 60px 20px;
   text-align: center;
-    position: relative;
+  position: relative;
   z-index: 1;
   overflow: hidden;
 }
@@ -198,6 +197,7 @@ button{
   border-radius: 50%;
   z-index: 0;
   filter: blur(60px);
+  background: rgba(163, 29, 29, 0.15);
 }
 
 #Category .category-title {
@@ -208,8 +208,10 @@ button{
   padding: 16px 480px;
   border-radius: 10px;
   font-weight: bold;
+  font-family: "Jua", sans-serif;
   margin-bottom: 50px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 #Category .category-wrapper {
@@ -226,11 +228,21 @@ button{
   text-decoration: none;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  will-change: transform, box-shadow;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 #Category .category-card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 #Category .category-card img {
@@ -238,6 +250,7 @@ button{
   height: 350px;
   object-fit: cover;
   display: block;
+  pointer-events: none; 
 }
 
 #Category .category-card p {
@@ -247,18 +260,18 @@ button{
   font-size: 22px;
   padding: 16px;
   margin: 0;
+  font-family: "Jua", sans-serif;
   text-align: center;
 }
 
-
-.label{
+.label {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
   font-weight: bold;
   font-size: x-large;
   color: #ffffff;
-  background-color: #A31D1D;
+  background-color: #a31d1d;
   border-radius: 30px;
   text-decoration: none;
   cursor: pointer;
@@ -285,12 +298,12 @@ button{
 
 .content .btn {
   display: inline-block;
-  background-color: #A31D1D;
+  background-color: #a31d1d;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
-  font-size: 18px;
+  font-size:  18px;
 }
 .btn:hover {
   background-color: #831515;
@@ -308,7 +321,7 @@ button{
   padding: 60px;
   gap: 30px;
   flex-wrap: wrap;
-  margin-bottom: 50px;;
+  margin-bottom: 50px;
 }
 
 .contact-section {
@@ -317,13 +330,14 @@ button{
   background-color: #fff;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section h1 {
-  color: #A31D1D;
+  color: #a31d1d;
   margin-bottom: 10px;
   font-size: 40px;
+  font-family: "Jua", sans-serif;
 }
 
 .contact-section p {
@@ -357,7 +371,7 @@ button{
 .contact-form button {
   margin-top: 20px;
   padding: 12px;
-  background-color: #A31D1D;
+  background-color: #a31d1d;
   color: white;
   border: none;
   border-radius: 8px;
@@ -378,27 +392,32 @@ button{
 }
 
 #Testimonial h2 {
-  font-size: 50px; 
+  font-size: 50px;
   margin-bottom: 20px;
   color: #a31d1d;
   text-align: center;
+  font-family: "Jua", sans-serif;
 }
 
 .testimonial-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: #A31D1D;
+  gap: 20px;
+  background: #a31d1d;
   padding: 20px;
   border-radius: 10px;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .testimonial-boxes {
   flex: 3;
+  min-width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-height: 500px; 
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
 .testimonial-card {
@@ -407,6 +426,22 @@ button{
   border-radius: 10px;
   padding: 15px;
   text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .user-info {
@@ -419,6 +454,7 @@ button{
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .user-name {
@@ -434,6 +470,7 @@ button{
 
 .comment {
   margin: 10px 0;
+  line-height: 1.4;
 }
 
 .stars {
@@ -443,11 +480,13 @@ button{
 
 .testimonial-form {
   flex: 1;
+  min-width: 35%;
   background-color: white;
   color: black;
   border-radius: 10px;
   padding: 20px;
   text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-form h3 {
@@ -469,19 +508,25 @@ button{
   border-radius: 6px;
   border: 2px solid #821a1a;
   margin-top: 5px;
+  font-family: inherit;
+}
+
+.testimonial-form textarea {
+  resize: vertical;
 }
 
 .testimonial-form button {
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 10px;
   background-color: #b80000;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   width: 100%;
+  transition: background-color 0.2s ease;
 }
 
 .testimonial-form button:hover {
@@ -490,8 +535,8 @@ button{
 
 .star-rating {
   display: flex;
-  flex-direction: row-reverse; 
-  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
   gap: 5px;
   margin-top: 5px;
 }
@@ -501,7 +546,7 @@ button{
 }
 
 .star-rating label {
-  font-size: 44px;
+  font-size: 30px;
   color: #ccc;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
@@ -513,6 +558,16 @@ button{
   color: gold;
 }
 
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+  }
+
+  .testimonial-boxes,
+  .testimonial-form {
+    min-width: 100%;
+  }
+}
 
 .craving-banner {
   width: 100%;
@@ -525,11 +580,11 @@ button{
   height: auto;
   display: block;
   margin: 0;
-  border-radius: 0; 
+  border-radius: 0;
 }
 
 .site-footer {
-  background-color: #A31D1D;
+  background-color: #a31d1d;
   color: white;
   padding: 40px 20px;
   font-size: 14px;

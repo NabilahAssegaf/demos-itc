@@ -1,202 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
-  <title>Home</title>
-</head>
-<body>
-  <header>
-    <div class="logo">MieMiu</div>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#Category">Category</a>
-      <a href="#Testimonial">Testimonial</a>
-      <a href="#contact">Contact</a>
-      <a href="cart.html" class="cart-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css" />
 
-<section id="home">
-  <div class="content">
-    <h1>Delicious Noodles, Anytime You Crave</h1>
-    <p>Enjoy warm, delicious noodles crafted to perfection—ready to comfort and delight you whenever hunger strikes</p>
-    <a href="#about" class="btn">Learn more</a>
-  </div>
-  <img class="png" src="img/cv.png" alt="">
-</section>
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">MieMiu</div>
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#Category">Category</a>
+        <a href="#Testimonial">Testimonial</a>
+        <a href="#contact">Contact</a>
+        <a href="cart.html" class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </div>
+    </header>
 
+    <section id="home">
+      <div class="content">
+        <h1>Delicious Noodles, Anytime You Crave</h1>
+        <p>
+          Enjoy warm, delicious noodles crafted to perfection—ready to comfort
+          and delight you whenever hunger strikes
+        </p>
+        <a href="#about" class="btn">Learn more</a>
+      </div>
+      <img class="png" src="img/cv.png" alt="" />
+    </section>
 
-<section id="about">
-  <img src="img/bulet.png" alt="background" class="bulet1">
-  <img src="img/bulet.png" alt="background" class="bulet2">
-  <img src="img/bulet.png" alt="background" class="bulet3">
+    <section id="about" data-aos="fade-up">
+      <img src="img/bulet.png" alt="background" class="bulet1" />
+      <img src="img/bulet.png" alt="background" class="bulet2" />
+      <img src="img/bulet.png" alt="background" class="bulet3" />
 
-  <h2>About Us</h2>
-  <div class="about-container">
-    <div class="about-text">
-      <p>
-  MieMiu adalah tempat yang menyajikan berbagai menu ramen dengan cita rasa khas. Kami menggunakan bahan-bahan segar dan resep yang telah disesuaikan dengan selera lokal.  
-  <br><br>
-  Fokus kami adalah memberikan makanan yang enak, harga yang terjangkau, dan pelayanan yang ramah. Cocok untuk makan bareng teman, keluarga, atau sendiri.
-</p>
+      <h2>About Us</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            MieMiu adalah tempat yang menyajikan berbagai menu ramen dengan cita
+            rasa khas. Kami menggunakan bahan-bahan segar dan resep yang telah
+            disesuaikan dengan selera lokal.
+            <br /><br />
+            Fokus kami adalah memberikan makanan yang enak, harga yang
+            terjangkau, dan pelayanan yang ramah. Cocok untuk makan bareng
+            teman, keluarga, atau sendiri.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="img/about.jpg" alt="About Image" />
+        </div>
+      </div>
+    </section>
 
-    </div>
-    <div class="about-img">
-      <img src="img/about.jpg" alt="About Image">
-    </div>
-  </div>
-</section>
+    <section id="Category" data-aos="fade-up">
+      <h2 class="category-title">Category</h2>
+      <div class="category-wrapper">
+        <a href="maindish.html" class="category-card">
+          <img src="img/maindish.jpg" alt="noodle" />
+          <p>Noodle</p>
+        </a>
 
-<section id="Category">
-  <h2 class="category-title">Category</h2>
-  <div class="category-wrapper">
-    
-    <a href="maindish.html" class="category-card">
-      <img src="img/maindish.jpg" alt="noodle">
-      <p>Noodle</p>
-    </a>
-    
-    <a href="sidedish.html" class="category-card">
-      <img src="img/sidedish.jpg" alt="side dish">
-      <p>Side dish</p>
-    </a>
-    
-    <a href="drink.html" class="category-card">
-      <img src="img/drink.jpg" alt="drink">
-      <p>Drink</p>
-    </a>
-    
-  </div>
-</section>
+        <a href="sidedish.html" class="category-card">
+          <img src="img/sidedish.jpg" alt="side dish" />
+          <p>Side dish</p>
+        </a>
 
+        <a href="drink.html" class="category-card">
+          <img src="img/drink.jpg" alt="drink" />
+          <p>Drink</p>
+        </a>
+      </div>
+    </section>
 
-<section id="Testimonial">
-  <h2>What Our Customers Say</h2>
-  <div class="testimonial-container">
-    <div class="testimonial-boxes">
-      <div class="testimonial-card">
-        <div class="user-info">
-          <img src="img/user.jpg" alt="User" class="profile-pic">
-          <div>
-            <p class="user-name">nab</p>
-            <p class="date">03/07/2025</p>
+    <section id="Testimonial">
+      <h2>What Our Customers Say</h2>
+
+      <div class="testimonial-container" data-aos="fade-up">
+        <!-- Daftar Testimonial (Default 3) -->
+        <div class="testimonial-boxes" id="testimonial-list">
+          <div class="testimonial-card">
+            <div class="user-info">
+              <img src="img/user.jpg" alt="User" class="profile-pic" />
+              <div>
+                <p class="user-name">dina</p>
+                <p class="date">03/07/2025</p>
+              </div>
+            </div>
+            <p class="comment">
+              Ramen di sini enak banget! Kuahnya gurih dan dalam banget rasanya, mie-nya juga kenyal dan pas.
+               Topping-nya lengkap, terutama chashu-nya empuk dan juicy. Suasananya nyaman dan cocok buat makan santai.
+            </p>
+            <p class="stars">★★★★★</p>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up">
+            <div class="user-info">
+              <img src="img/user.jpg" alt="User" class="profile-pic" />
+              <div>
+                <p class="user-name">dewi</p>
+                <p class="date">03/07/2025</p>
+              </div>
+            </div>
+            <p class="comment">
+              Tempat ramen favorit saya sejauh ini! Porsinya mengenyangkan, minumannya segar,
+               dan yang paling penting, rasanya konsisten enak setiap kali datang.
+            </p>
+            <p class="stars">★★★★★</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="user-info">
+              <img src="img/user.jpg" alt="User" class="profile-pic" />
+              <div>
+                <p class="user-name">andi</p>
+                <p class="date">03/07/2025</p>
+              </div>
+            </div>
+            <p class="comment">
+              Saya benar-benar terkesan dengan rasa ramen di toko ini!
+               Kuahnya kaya rasa, gurih, dan terasa sekali kaldu yang dimasak lama.
+                Mienya kenyal dengan tingkat kematangan yang pas, dan topping chashu-nya empuk serta juicy.
+                 Tempatnya juga bersih dan nyaman, cocok buat makan santai atau kumpul bareng teman. Pasti jadi langganan!
+            </p>
+            <p class="stars">★★★★★</p>
           </div>
         </div>
-        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magnam dolor, consequatur ipsam assumenda recusandae sed, illo eaque porro id iusto. Deleniti debitis dolores</p>
-        <p class="stars">★★★★★</p>
-      </div>
 
-      <div class="testimonial-card">
-        <div class="user-info">
-          <img src="img/user.jpg" alt="User" class="profile-pic">
-          <div>
-            <p class="user-name">nab</p>
-            <p class="date">03/07/2025</p>
-          </div>
+        <div class="testimonial-form">
+          <h3>Leave comment here !!</h3>
+          <form id="testimonial-form" action="#">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Masukan nama anda"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              placeholder="Tulis pesan disini"
+              required
+            ></textarea>
+
+            <label for="rating">Rating</label>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="star5"
+                name="rating"
+                value="5"
+                required
+              /><label for="star5">★</label>
+              <input type="radio" id="star4" name="rating" value="4" /><label
+                for="star4"
+                >★</label
+              >
+              <input type="radio" id="star3" name="rating" value="3" /><label
+                for="star3"
+                >★</label
+              >
+              <input type="radio" id="star2" name="rating" value="2" /><label
+                for="star2"
+                >★</label
+              >
+              <input type="radio" id="star1" name="rating" value="1" /><label
+                for="star1"
+                >★</label
+              >
+            </div>
+
+            <button type="submit">Send</button>
+          </form>
         </div>
-        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magnam dolor, consequatur ipsam assumenda recusandae sed, illo eaque porro id iusto. Deleniti debitis dolores</p>
-        <p class="stars">★★★★★</p>
+      </div>
+    </section>
+
+    <section class="craving-banner" data-aos="fade-up">
+      <img
+        src="img/Craving something tasty Our delicious noodles are here to save the day (7).png"
+        alt="Craving something tasty"
+        class="craving-full"
+      />
+    </section>
+
+    <section class="contact-section" id="contact" data-aos="fade-up">
+      <h1>Contact Us</h1>
+      <p>Have questions or want to order something? Let us know!</p>
+
+      <div class="contact-info">
+        <p><span class="bold">Email:</span> toko@noodle.com</p>
+        <p><span class="bold">Phone:</span> +62 812-3456-789</p>
+        <p><span class="bold">Address:</span> Jl. Mie Lezat No. 12, Jakarta</p>
       </div>
 
-      <div class="testimonial-card">
-        <div class="user-info">
-          <img src="img/user.jpg" alt="User" class="profile-pic">
-          <div>
-            <p class="user-name">nab</p>
-            <p class="date">03/07/2025</p>
-          </div>
+      <form class="contact-form" action="#">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="contact-name"
+          name="name"
+          required
+          placeholder="masukan nama anda"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="contact-email"
+          name="email"
+          required
+          placeholder="yourname@example.com"
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="contact-message"
+          name="message"
+          required
+          placeholder="Tulis pesan disini"
+          rows="5"
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h2 class="footer-title">MieMiu</h2>
+          <p>
+            Freshly made ramen, cozy sides, and tasty drinks to brighten your
+            day.
+          </p>
         </div>
-        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magnam dolor, consequatur ipsam assumenda recusandae sed, illo eaque porro id iusto. Deleniti debitis dolores</p>
-        <p class="stars">★★★★★</p>
+
+        <div class="footer-section contact">
+          <h3>Contact</h3>
+          <p>Email: noodle@stars.com</p>
+          <p>Phone: +62 812-3456-7890</p>
+          <p>Instagram: @noodlestars</p>
+        </div>
+
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="maindish.html">Main Dish</a></li>
+            <li><a href="sidedish.html">Side Dish</a></li>
+            <li><a href="drink.html">Drink</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-<div class="testimonial-form">
-  <h3>Leave comment here !!</h3>
-  <form action="#">
-    <label for="name">name</label>
-    <input type="text" id="name" name="name" placeholder="Masukan nama anda">
+      <div class="footer-bottom">
+        <p>&copy; 2025 MieMiu — All Rights Reserved</p>
+      </div>
+    </footer>
 
-    <label for="message">message</label>
-    <textarea id="message" name="message" rows="7" placeholder="Tulis pesan disini"></textarea>
-
-    <label for="rating">rating</label>
-    <div class="star-rating">
-      <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
-      <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
-      <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
-      <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
-      <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
-    </div>
-
-    <button type="submit">send</button>
-  </form>
-</div>
-
-</section>
-
-<section class="craving-banner">
-  <img src="img/Craving something tasty Our delicious noodles are here to save the day (7).png" alt="Craving something tasty" class="craving-full">
-</section>
-
-
-     <section class="contact-section" id="contact">
-    <h1>Contact Us</h1>
-    <p>Have questions or want to order something? Let us know!</p>
-
-    <div class="contact-info">
-      <p><span class="bold">Email:</span> toko@noodle.com</p>
-      <p><span class="bold">Phone:</span> +62 812-3456-789</p>
-      <p><span class="bold">Address:</span> Jl. Mie Lezat No. 12, Jakarta</p>
-    </div>
-
-    <form class="contact-form" action="#">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required placeholder="masukan nama anda">
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required placeholder="yourname@example.com">
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required placeholder="Tulis pesan disini"></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-<footer class="site-footer">
-  <div class="footer-content">
-    <div class="footer-section about">
-      <h2 class="footer-title">MieMiu</h2>
-      <p>Freshly made ramen, cozy sides, and tasty drinks to brighten your day.</p>
-    </div>
-    
-    <div class="footer-section contact">
-      <h3>Contact</h3>
-      <p>Email: noodle@stars.com</p>
-      <p>Phone: +62 812-3456-7890</p>
-      <p>Instagram: @noodlestars</p>
-    </div>
-    
-    <div class="footer-section links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="maindish.html">Main Dish</a></li>
-        <li><a href="sidedish.html">Side Dish</a></li>
-        <li><a href="drink.html">Drink</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 MieMiu — All Rights Reserved</p>
-  </div>
-</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
+  </body>
 </html>

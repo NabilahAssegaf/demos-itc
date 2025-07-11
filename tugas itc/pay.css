@@ -1,8 +1,8 @@
 :root {
-  --brand: #6E1423;
-  --accent: #FEF9E1;
-  --button: #A31D1D;
-  --text: #2D2D2D;
+  --brand: #6e1423;
+  --accent: #fef9e1;
+  --button: #a31d1d;
+  --text: #2d2d2d;
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background-color: var(--accent);
   padding: 40px;
   color: var(--text);
@@ -23,7 +23,7 @@ body {
   top: 5px;
   left: 15px;
   font-size: 24px;
-  color: #A31D1D;
+  color: #a31d1d;
   padding: 10px 12px;
   border-radius: 50%;
   z-index: 10;
@@ -37,7 +37,8 @@ body {
   flex-wrap: wrap;
 }
 
-.form-section, .summary-section {
+.form-section,
+.summary-section {
   flex: 1 1 450px;
   background: white;
   padding: 30px;
@@ -61,7 +62,9 @@ label {
   font-weight: 600;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 14px;
   border-radius: 10px;

@@ -1,10 +1,10 @@
 body {
-  background-color: #FEF9E1;
+  background-color: #fef9e1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -41,7 +41,7 @@ body {
 
 .cart-content {
   margin-top: 80px;
-  padding-bottom: 100px; 
+  padding-bottom: 100px;
 }
 
 .cart-item {
@@ -143,4 +143,3 @@ body {
 .checkout-button i {
   margin-left: 5px;
 }
-

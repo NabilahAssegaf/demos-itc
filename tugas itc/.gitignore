@@ -1,0 +1,17 @@
+# Node modules (kalau kamu pakai npm / prettier / tailwind / dsb)
+node_modules/
+
+# Cache editor
+.vscode/
+*.log
+
+# Sistem OS
+.DS_Store
+Thumbs.db
+
+# Folder build (kalau pakai tool seperti webpack, vite, dll)
+dist/
+build/
+
+# Environment file (kalau suatu saat pakai API key dsb)
+.env
